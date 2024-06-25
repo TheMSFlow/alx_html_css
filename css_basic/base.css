@@ -97,7 +97,7 @@ a {
 }
 
 article {
-	padding: 2rem;
+	padding: 1rem;
 }
 article > *:first-child {
 	margin-top: 0;
@@ -113,7 +113,7 @@ header .right {
 
 /* Header */
 header {
-	padding: 1rem 2rem 1rem 2rem;
+	padding: 1rem;
 	height: auto;
 }
 header ul {
@@ -129,7 +129,7 @@ header li:first-child {
 	margin: 0;
 }
 header li a {
-	margin: 0 10px;
+	margin: 0;
 }
 header li.logo {
 	font-size: 36px;
