@@ -9,10 +9,12 @@
 </head>
 <body class="works_on_smartphone">
   <header>
-    <nav>
+    <nav class="header">
+      <div>
+        <a href="#"><img src="alx-logo.svg" width="50px"></a>
+      </div>
       <ul>
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="tweets.html">Tweets</a></li>
+        <li><a href="#tweet">Tweet</a></li>
       </ul>
     </nav>
   </header>
@@ -30,34 +32,37 @@
         <figcaption>Don't be this guy #DoHardThings</figcaption>
       </figure>
 
-      <p> Keep going and crush front-end. </p>
-      <b>Brace up for JS!</b>
-        <blockquote width="400px" class="twitter-tweet"><p lang="en" dir="ltr">At dawn from the gateway to Mars, the launch of Starship’s second flight test <a href="https://t.co/ffKnsVKwG4">pic.twitter.com/ffKnsVKwG4</a></p>&mdash; SpaceX (@SpaceX) <a href="https://twitter.com/SpaceX/status/1732824684683784516?ref_src=twsrc%5Etfw">December 7, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="space"></div>
+      <div id="tweet">
+        <blockquote width="400px" class="twitter-tweet"><p lang="en" dir="ltr">At dawn from the gateway to Mars, the launch of Starship’s second flight test <a href="https://t.co/ffKnsVKwG4">pic.twitter.com/ffKnsVKwG4</a></p>&mdash; SpaceX (@SpaceX) <a href="https://twitter.com/SpaceX/status/1732824684683784516?ref_src=twsrc%5Etfw">December 7, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
   
-      <table>
+        <div class="space"></div>
+
+      <table class="table">
+        <br>
         <thead>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Country</th>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Country</th>
         </thead>
         <tbody>
           <tr>
-            <td>John</td>
+            <th scope="row">John</th>
             <td>25</td>
             <td>USA</td>
           </tr>
           <tr>
-            <td>Emily</td>
+            <th scope="row">Emily</th>
             <td>28</td>
             <td>Canada</td>
           </tr>
           <tr>
-            <td>Michael</td>
+            <th scope="row">Michael</th>
             <td>32</td>
             <td>Australia</td>
           </tr>
           <tr>
-            <td>Sophia</td>
+            <th scope="row">Sophia</th>
             <td>21</td>
             <td>UK</td>
           </tr>

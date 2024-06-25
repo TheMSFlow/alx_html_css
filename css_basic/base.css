@@ -97,7 +97,7 @@ a {
 }
 
 article {
-	padding: 50px 15px;
+	padding: 2rem;
 }
 article > *:first-child {
 	margin-top: 0;
@@ -113,8 +113,8 @@ header .right {
 
 /* Header */
 header {
-	padding: 20px 0;
-	height: 80px;
+	padding: 1rem 2rem 1rem 2rem;
+	height: auto;
 }
 header ul {
 	list-style: none;
@@ -197,4 +197,7 @@ h6 {
   header .right {
   	float: none;
   }
+	.table{
+		width: auto;
+	}
 }
