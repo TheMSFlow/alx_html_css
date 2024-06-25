@@ -27,6 +27,14 @@ aside {
   justify-content: space-between;
 }
 
+.link1 {
+ padding-right: 1rem;
+}
+
+.tweet {
+  padding-left: 1rem;
+}
+
 .space{
   margin-bottom: 2rem;
 }
