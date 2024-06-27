@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'source-black';
+  src: url(fonts/SourceSansPro-Black.otf )
+}
+
+@font-face {
+  font-family: 'source-bold';
+  src: url(fonts/SourceSansPro-Bold.otf )
+}
+
+@font-face {
+  font-family: 'source-semi-bold';
+  src: url(fonts/SourceSansPro-Semibold.otf )
+}
+
+@font-face {
+  font-family: 'source';
+  src: url(fonts/SourceSansPro-Regular.otf )
+}
+
+@font-face {
+  font-family: 'source-xlight-italic';
+  src: url(fonts/SourceSansPro-ExtraLightIt.otf )
+}
+
+@font-face {
+  font-family: 'source-light';
+  src: url(fonts/SourceSansPro-Light.otf )
+}
+
+:root {
+  --brand: #C271FF;
+  --primary: #ffffff;
+  --secondary: #000000;
+}
+
+
+/* CSS reset rules */
+
+html,{
+	height: 100%;
+	min-height: 100%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Fonts */
+
+body {
+	font-family: 'source', serif;
+	color: var(--secondary)
+}
+h1, h2, h3, h4, h5, h6, header {
+	font-family: 'source', sans-serif;
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: bold;
+}
+
+
+
+body {
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 1440px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  width: 1112px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+nav ul {
+  display: flex;
+  gap: 53px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav a {
+  font-family: 'source';
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--primary);
+}
+.space-hero {
+  height: 200px;
+}
+
+.hero-section {
+  width: 100%;
+  height: 1093px; 
+  background-image: url("images/hero_background_image.jpg") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--primary);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-container {
+  margin: auto;
+  height:auto;
+  width: 1112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: row;
+  gap: 58px;
+  margin-top: -20px;
+}
+
+.slogan span {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 38px;
+}
+
+.hero-container button {
+  background-color: var(--brand);
+  padding: 13px 20px;
+  border: none;
+  border-radius: 22px;
+  font-family: 'source-semi-bold';
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.avatar-pros {
+  margin-top: 168px;
+}
+
+.avatar-pros h2 {
+  font-size: 32px;
+  font-family: 'source-light';
+  margin-bottom: 87px;
+ }
+
+.avatar {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 136px;
+  width: 1112px;
+}
+
+.avatar div {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar h3 {
+  font-family: 'source-black';
+  font-size: 18px;
+}
+
+.avatar p {
+  font-family: 'source-xlight-italic';
+  font-weight: 300;
+  font-size: 16px;
+}
