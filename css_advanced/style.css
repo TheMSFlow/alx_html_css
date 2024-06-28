@@ -292,6 +292,7 @@ blockquote{
   justify-content: center;
   align-items: center;
   padding: 87px 0px 87px 0px;
+  background-color: var(--primary);
 }
 
 .videos-section h2 {
@@ -470,6 +471,7 @@ blockquote{
   gap: 74px;
   padding-top: 78px;
   padding-bottom: 78px;
+  background-color: var(--primary);
 }
 
 .faq-section h2 {
