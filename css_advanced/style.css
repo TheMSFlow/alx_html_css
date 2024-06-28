@@ -32,13 +32,14 @@
   --brand: #C271FF;
   --primary: #ffffff;
   --secondary: #000000;
+  --tertiary: #071629;
   --black50: hsl(210, 20%, 64%);
 }
 
 
 /* CSS reset rules */
 
-html,{
+html {
 	height: 100%;
 	min-height: 100%;
 }
@@ -391,3 +392,152 @@ blockquote{
 
 
 /* -------------------Membership Section------------------------ */
+
+.member-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tertiary);
+  color: var(--primary);
+  padding-top: 87px;
+  padding-bottom: 87px;
+  gap: 58px;
+}
+
+.member-section span {
+  font-family: 'source-bold';
+  font-size: 32px;
+  color: var(--brand);
+}
+
+.member-section h2 {
+  font-family: 'source-light';
+  font-size: 32px;
+}
+
+.member-wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1112px;
+  gap: 27px;
+  text-align: center;
+}
+
+.member-wrap div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.member-wrap img {
+  width: 43px;
+}
+
+.member-wrap div h3 {
+  font-family: 'source-semi-bold';
+  font-size: 18px;
+}
+
+.member-wrap div p {
+  font-family: 'source-light';
+  font-size: 14px;
+  width: 25ch;
+}
+
+.member-section button {
+  background-color: var(--brand);
+  padding: 13px 20px;
+  border: none;
+  border-radius: 22px;
+  font-family: 'source-semi-bold';
+  font-size: 14px;
+  color: var(--primary);
+}
+
+
+/* -------------------FAQ Section------------------------ */
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 74px;
+  padding-top: 78px;
+  padding-bottom: 78px;
+}
+
+.faq-section h2 {
+  font-family: 'source-light';
+  font-size: 60px;
+}
+
+.faq-component {
+  width: 920px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-content: space-between;
+  column-gap: 220px;
+  row-gap: 74px;
+}
+
+.faq-component div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.faq-component h3 {
+  font-family: 'source-bold';
+  font-size: 18px;
+}
+
+.faq-component p {
+  font-family: 'source';
+  font-size: 14px;
+  color: var(--black50);
+}
+
+
+/* -------------------Footer Section------------------------ */
+
+
+.footer-section {
+  background-color: var(--tertiary);
+  height: 219px;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -20px;
+}
+
+.footer-container {
+  width: 1103px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-container #social {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+section #copy {
+  display: block;
+  text-align: center;
+  background-color: var(--tertiary);
+  color: var(--black50);
+  padding-bottom: 30px;
+}
