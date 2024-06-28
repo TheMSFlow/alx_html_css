@@ -32,6 +32,7 @@
   --brand: #C271FF;
   --primary: #ffffff;
   --secondary: #000000;
+  --black50: hsl(210, 20%, 64%);
 }
 
 
@@ -295,5 +296,79 @@ blockquote{
   font-family: 'source-light';
   font-size: 32px;
   margin-bottom: 10px;
+}
+
+.video-component{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1112px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+}
+
+.thumbnail-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.thumbnail-wrap img {
+ border-radius: 5px 5px 0px 0px;
+}
+
+.video-container #play-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.video-container h3 {
+  font-family: source-bold;
+  font-size: 16px;
+}
+
+.video-container p {
+  font-family: source;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: var(--black50);
+}
+
+#round-image {
+  border-radius: 50%;
+  
+}
+
+.profile-wrap h4 {
+  color: var(--brand);
+  font-family: source-semi-bold;
+}
+
+.stars-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.stars div {
+  color: var(--brand);
+}
+
+.stars #gray-star {
+  color: #D8D8D8;
 }
 
