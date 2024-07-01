@@ -143,16 +143,16 @@ header li a:hover{
  color: var(--primary);
 }
 
-header ul {
+header .menu {
 	max-height: 0;
   transition: max-height .2s ease-out;
 }
 
 .menu-icon {
-	background-color: var(--primary);
+	/* background-color: var(--primary); */
 	padding: 20px 24px;
 	position: absolute;
-	top: 22px;
+	top: 20px;
 	left: 16px;
 	cursor: pointer;
   user-select: none;
@@ -164,27 +164,45 @@ header .menu-icon .nav-icon {
   height: 2px;
   position: relative;
   transition: background .2s ease-out;
-  width: 22px;
+  width: 18px;
 }
 
-header .menu-icon .nav-icon:before {
+header .menu-icon .nav-icon:before,
+header .menu-icon .nav-icon:after {
   background: var(--white);
 	content: '';
   display: block;
   height: 100%;
   position: absolute;
   transition: background .2s ease-out;
-	top: 20px;
+	width: 120%;
 }
-/* 
+
 header .menu-icon .nav-icon:before {
-	top: 15px;
+	top: 8px;
 }
 
 header .menu-icon .nav-icon:after {
-	top: -15px;
-} */
+	top: -8px;
+}
 
+header .menu-btn:checked ~ ul {
+  max-height: 240px;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
 
 
 
