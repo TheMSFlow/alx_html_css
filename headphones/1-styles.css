@@ -1,3 +1,40 @@
+@font-face {
+  font-family: 'source-black';
+  src: url(fonts/SourceSansPro-Black.otf )
+}
+
+@font-face {
+  font-family: 'source-bold';
+  src: url(fonts/SourceSansPro-Bold.otf )
+}
+
+@font-face {
+  font-family: 'source-semi-bold';
+  src: url(fonts/SourceSansPro-Semibold.otf )
+}
+
+@font-face {
+  font-family: 'source';
+  src: url(fonts/SourceSansPro-Regular.otf )
+}
+
+@font-face {
+  font-family: 'source-xlight-italic';
+  src: url(fonts/SourceSansPro-ExtraLightIt.otf )
+}
+
+@font-face {
+  font-family: 'source-light';
+  src: url(fonts/SourceSansPro-Light.otf )
+}
+
+:root {
+	--primary: #FF6565;
+	--secondary: #071629;
+	--white: #ffffff;
+  --black: #000000;
+}
+
 /* CSS reset rules */
 
 html {
@@ -45,12 +82,126 @@ table {
 	border-spacing: 0;
 }
 
+a {
+	color: var(--secondary);
+}
+
+
+.btn {
+  background-color: var(--primary);
+  padding: 13px 31px;
+  border: none;
+  border-radius: 22px;
+  font-family: 'source-semi-bold';
+  font-size: 14px;
+  color: var(--white);
+}
 
 
 
 /* -------------------Header/Nav Section------------------------ */
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 22px;
+}
+
+.nav img {
+	max-width: 161px;
+}
+
+header input {
+	display: none;
+}
+
+header ul {
+	text-align: center;
+	width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+	color: var(--white);
+	font-family: 'source-semi-bold';
+}
+
+header li a:hover{
+ color: var(--primary);
+}
+
+header ul {
+	max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.menu-icon {
+	background-color: var(--primary);
+	padding: 20px 24px;
+	position: absolute;
+	top: 22px;
+	left: 16px;
+	cursor: pointer;
+  user-select: none;
+}
+
+header .menu-icon .nav-icon {
+  background: var(--white);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 22px;
+}
+
+header .menu-icon .nav-icon:before {
+  background: var(--white);
+	content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: background .2s ease-out;
+	top: 20px;
+}
+/* 
+header .menu-icon .nav-icon:before {
+	top: 15px;
+}
+
+header .menu-icon .nav-icon:after {
+	top: -15px;
+} */
+
+
+
+
+
+
+/* -------------------Hero Section------------------------ */
+
+
 .hero-section {
   width: 100%;
-  height: auto;
-  background-image: url("/images/headphones_hero_1.jpg");
+  height: 869px;
+  background-image: url("./images/headphones_hero_1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: end;
 }
