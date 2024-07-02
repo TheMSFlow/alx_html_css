@@ -118,10 +118,6 @@ header {
 	max-width: 161px;
 }
 
-header input {
-	display: none;
-}
-
 header ul {
 	text-align: center;
 	width: 100%;
@@ -145,11 +141,14 @@ header li a:hover{
 
 header .menu {
 	max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: max-height .2s ease-in-out;
+}
+
+header .menu-btn {
+	display: none;
 }
 
 .menu-icon {
-	/* background-color: var(--primary); */
 	padding: 20px 24px;
 	position: absolute;
 	top: 20px;
@@ -162,9 +161,9 @@ header .menu-icon .nav-icon {
   background: var(--white);
   display: block;
   height: 2px;
+	width: 18px;
   position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
+	transition: background .2s ease-in;
 }
 
 header .menu-icon .nav-icon:before,
@@ -173,9 +172,10 @@ header .menu-icon .nav-icon:after {
 	content: '';
   display: block;
   height: 100%;
-  position: absolute;
-  transition: background .2s ease-out;
 	width: 120%;
+  position: absolute;
+  transition: all .2s ease-in;
+	
 }
 
 header .menu-icon .nav-icon:before {
@@ -186,7 +186,7 @@ header .menu-icon .nav-icon:after {
 	top: -8px;
 }
 
-header .menu-btn:checked ~ ul {
+header .menu-btn:checked ~ div .menu {
   max-height: 240px;
 }
 
