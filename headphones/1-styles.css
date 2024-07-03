@@ -222,7 +222,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
   height: auto;
   background-image: url("./images/headphones_hero_1.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 40% 20%;
 	background-size: cover;
 	color: var(--white);
 	text-align: center;
@@ -263,6 +263,69 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
 .hero-section .hero-text {
 	padding-bottom: 106px;
 }
+
+
+
+/* -------------------What We Do Section------------------------ */
+
+.service-section {
+	color: var(--secondary);
+	background-color: var(--white);
+}
+
+.container-large {
+	margin: auto;
+	max-width: 1000px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.service-component {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	gap: 96px;
+}
+
+.info-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.info-wrap h2 {
+	font-family: 'source-semi-bold';
+	font-size: 32px;
+}
+
+.card-component {
+	display: grid;
+	gap: 96px;
+}
+
+.card-small {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.card-small h3 {
+	font-family: 'source-semi-bold';
+	font-size: 18px;
+}
+
+.card-small p {
+	max-width: 25ch;
+}
+
+
+/* -------------------Responsiveness------------------------ */
+
 
 
 @media (571px < width < 768px) {
@@ -317,7 +380,15 @@ header .menu {
 	margin: auto;
 }
 
+/* ---------------Services Section---------------- */
+.card-component {
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: end;
+	gap: 96px;
 }
+}
+
 
 @media (767px < width < 1401px) {
 
@@ -370,4 +441,17 @@ header .menu {
 	max-width: 637px;
 	margin: auto;
 }
+
+/* ---------------Services Section---------------- */
+.card-component {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	align-items: end;
+	gap: 58px;
+}
+
+.info-wrap p {
+	max-width: 80ch;
+}
+
 }
