@@ -126,13 +126,10 @@ header {
 	max-width: 161px;
 }
 
-header ul {
-	text-align: center;
-	width: 100%;
+.menu {
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
 }
 
 header li a {
@@ -140,24 +137,25 @@ header li a {
   padding: 20px 20px;
   text-decoration: none;
 	color: var(--white);
-	font-family: 'source-semi-bold';
+	font-family: 'source';
 }
+
 
 header li a:hover{
  color: var(--primary);
 }
 
 header .menu {
-	max-height: 0;
-  transition: max-height .2s ease-in-out;
+	display: none;
+  transition: display .2s ease-in-out;
 }
 
-header .menu-btn {
+.menu-btn {
 	display: none;
 }
 
 .menu-icon {
-	padding: 20px 24px;
+	padding-top: 20px;
 	position: absolute;
 	top: 20px;
 	left: 16px;
@@ -195,7 +193,7 @@ header .menu-icon .nav-icon:after {
 }
 
 header .menu-btn:checked ~ div .menu {
-  max-height: 240px;
+  display: block;
 }
 
 header .menu-btn:checked ~ .menu-icon .nav-icon {
@@ -264,4 +262,112 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
 
 .hero-section .hero-text {
 	padding-bottom: 106px;
+}
+
+
+@media (571px < width < 768px) {
+
+	
+	.nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	
+header li a {
+  display: block;
+  padding: 0px;
+  text-decoration: none;
+	color: var(--white);
+	font-family: 'source';
+}
+
+.menu-icon {
+	display: none;
+}
+
+header .menu {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: end;
+	column-gap: 20px;
+}
+
+.hero-component h1 {
+	font-family: 'source-bold';
+	font-size: 32px;
+	max-width: 60ch;
+	line-height: 1.3;
+}
+
+.hero-component p {
+	font-family: 'source-semi-bold';
+	font-size: 16px;
+	max-width: 60ch;
+}
+
+.hero-section .hero-text {
+	max-width: 637px;
+	margin: auto;
+}
+
+}
+
+@media (767px < width < 1401px) {
+
+	
+	.nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	
+header li a {
+  display: block;
+  padding: 0px;
+  text-decoration: none;
+	color: var(--white);
+	font-family: 'source';
+}
+
+.menu-icon {
+	display: none;
+}
+
+header .menu {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: end;
+	column-gap: 20px;
+}
+
+.hero-component h1 {
+	font-family: 'source-bold';
+	font-size: 32px;
+	max-width: 60ch;
+	line-height: 1.3;
+}
+
+.hero-component p {
+	font-family: 'source-semi-bold';
+	font-size: 16px;
+	max-width: 60ch;
+}
+
+.hero-section .hero-text {
+	max-width: 637px;
+	margin: auto;
+}
 }
