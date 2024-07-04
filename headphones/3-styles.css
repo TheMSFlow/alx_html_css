@@ -335,8 +335,6 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
 
 
 .hero-section {
-  width: 100%;
-  height: auto;
   background-image: url("./images/headphones_hero_1.jpg");
 	background-repeat: no-repeat;
 	background-position: 40% 20%;
