@@ -440,6 +440,12 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
 	font-size: 60px;
 }
 
+.card-small:hover {
+  background-color: #97979716;
+}
+
+
+
 
 /* -------------------Result Section------------------------ */
 .result-section {
@@ -829,4 +835,22 @@ footer .container-large  {
   padding-bottom: 109px;
 }
 
+}
+
+
+
+/* ---------------ANIMATIONS---------------- */
+
+header {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
