@@ -605,7 +605,7 @@ footer p {
 
 
 /* Tablet */
-@media (571px < width < 1200px) {
+@media (480px < width < 768px) {
 
   section, footer {
     padding-left: 32px;
@@ -688,7 +688,7 @@ footer .container-large  {
 }
 
 /* Desktop */
-@media (1200px < width < 2560px) {
+@media (768px < width < 2560px) {
 
 	section, footer {
     padding-left: 100px;

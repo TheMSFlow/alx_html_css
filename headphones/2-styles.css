@@ -493,7 +493,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
 
 
 /* Tablet */
-@media (571px < width < 768px) {
+@media (480px < width < 768px) {
 
   .container, .container-large {
     padding-left: 32px;
@@ -559,7 +559,7 @@ header .menu {
 }
 
 /* Desktop */
-@media (767px < width < 2560px) {
+@media (768px < width < 2560px) {
 
 	.container, .container-large {
     padding-left: 100px;
