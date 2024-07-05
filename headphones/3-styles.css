@@ -188,6 +188,11 @@ a {
   font-family: 'source-semi-bold';
   font-size: 14px;
   color: var(--white);
+  opacity: 1;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 
