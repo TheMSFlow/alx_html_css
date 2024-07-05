@@ -597,6 +597,10 @@ textarea::placeholder {
   resize: none;
 }
 
+#button-wrap {
+	text-align: center;
+}
+
 .btn {
   background-color: var(--primary);
   padding: 13px 20px;
