@@ -359,7 +359,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
 	row-gap: 8px;
 	align-items: center;
 	justify-content: center;
-	padding-top: 327px;
+	padding-top: 200px;
 	padding-bottom: 65px;
   margin: auto;
 }
